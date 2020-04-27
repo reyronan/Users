@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="css/hey.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="see-users">See Users</div>
+            <div>Add User</div>
+        </nav>
+        <div id="table-cont">
+           
+        </div>
+    </header>
+
+    <div id="add-user-modal">
+       <div class="modal-cont">
+           <!-- <h3>Add User Details</h3> -->
+           <div class="modal-content">
+           <form action="/data" method="post">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username"/>
+                <label for="email">Email</label>
+                <input type="text" placeholder="Email"/>
+                <input id="button" type="submit" value="Add User">
+           </form>
+            </div>
+       </div> 
+    </div>
+</body>
+<script src="js/vars.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/events.js"></script>
+<script src="js/fetches.js"></script>
+<script src="js/main.js"></script>
+
+
+</html>
