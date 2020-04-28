@@ -11,8 +11,14 @@ function getData(req, res) {
   })
 }
 function addData(req, res) {
-  console.log(req.body);
-  
+  let username = req.body.username;
+  let email = req.body.email;
+  let newUser = new dbConnectObj.model({username,email});
+  newUser.save(function (err, nu) {
+    if (err) return console.error(err);
+    console.error("saved", nu);
+    res.send({success: true})
+  });
 }
 module.exports.getData = getData;
 module.exports.addData = addData;

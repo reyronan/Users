@@ -20,16 +20,16 @@
         </div>
     </header>
 
-    <div id="add-user-modal">
+    <div id="add-user-modal" style="display:none;">
        <div class="modal-cont">
            <!-- <h3>Add User Details</h3> -->
            <div class="modal-content">
-           <form action="/data" method="post">
+           <form action="/data" method="post" id="add-user-form">
                 <label for="username">Username</label>
-                <input type="text" placeholder="Username"/>
+                <input type="text" placeholder="Username" name="username" value="" id="username"/>
                 <label for="email">Email</label>
-                <input type="text" placeholder="Email"/>
-                <input id="button" type="submit" value="Add User">
+                <input type="text" placeholder="Email" name="email" value="" id="email"/>
+                <input id="button" type="submit" value="Add User" >
            </form>
             </div>
        </div> 
